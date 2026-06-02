@@ -1,0 +1,13 @@
+---
+import Navigation from "./Navigation.astro";
+const {name, avatar} = Astro.props;
+---
+<header class="bg-white shadow-sm sticky top-0 z-10">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <img src={avatar} alt="Fotografía" class="my-1 w-32 bg-pink-100 rounded-full">
+    <a href="/" class="text-xl font-bold text-gray-900 hover:text-blue-600 transition">
+      {name}
+    </a>
+    <Navigation />
+  </div>
+</header>

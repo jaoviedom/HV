@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import hvData from "../data/data.json";
+import Experience from "../components/Experience.astro";
+import Education from "../components/Education.astro";
+import Skill from "../components/Skill.astro";
+import Project from "../components/Project.astro";
+
+const data = hvData;
+---
+
+<BaseLayout title="HV | Inicio">
+	<section id="educacion" class="mb-10">
+		<h2 class="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-pink-500 inline-block">Educación</h2>
+		<div class="mt-4">
+			{data.education.map((edu) => <Education degree={edu.degree} institution={edu.institution} dates={edu.institution} description={edu.description} />)}
+		</div>
+	</section>
+	<section id="habilidades" class="mb-10">
+		<h2 class="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-pink-500 inline-block">Habilidades</h2>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+			<div>
+				<h3 class="font-semibold text-gray-900 mb-2">Frontend</h3>
+				<div class="flex flex-col md:flex-row  gap-2">
+					{data.skills.frontend.map((skill) => <Skill skill={skill} />)}
+				</div>
+			</div>
+			<div>
+				<h3 class="font-semibold text-gray-900 mb-2">Backend</h3>
+				<div class="flex flex-col md:flex-row gap-2">
+					{data.skills.backend.map((skill) => <Skill skill={skill} />)}
+				</div>
+			</div>
+			<div>
+				<h3 class="font-semibold text-gray-900 mb-2">Herramientas</h3>
+				<div class="flex flex-col md:flex-row gap-2">
+					{data.skills.tools.map((skill) => <Skill skill={skill} />)}
+				</div>
+			</div>
+			<div>
+				<h3 class="font-semibold text-gray-900 mb-2">Idiomas</h3>
+				<div class="flex flex-col md:flex-row gap-2">
+					{data.skills.languages.map((skill) => <Skill skill={skill} />)}
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="experiencia">
+		<h2 class="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-pink-500 inline-block">Experiencia</h2>
+		<div class="mt-4">
+			{data.experience.map((exp) => <Experience role={exp.role} company={exp.company} dates={exp.dates} description={exp.description} technologies={exp.technologies} />)}
+		</div>
+	</section>
+	<section id="proyectos">
+		<h2 class="text-2xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-pink-500 inline-block">Proyectos destacados</h2>
+		<div class="mt-4">
+			{data.projects.map(p => <Project name={p.name} description={p.description} link={p.link} />)}
+		</div>
+	</section>
+</BaseLayout>

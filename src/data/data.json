@@ -1,0 +1,67 @@
+{
+  "personal": {
+    "name": "Ana María López",
+    "title": "Estudiante de Ingeniería de Software",
+    "email": "ana.lopez@universidad.edu",
+    "phone": "+57 300 123 9876",
+    "location": "Ibagué, Colombia",
+    "github": "github.com/analopez",
+    "linkedin": "linkedin.com/in/analopez",
+    "avatar": "/avatar.png"
+  },
+  "summary": "Estudiante de tercer semestre con interés en desarrollo web y tecnologías frontend. Apasionada por crear interfaces accesibles y colaborar en proyectos open source.",
+  "education": [
+    {
+      "degree": "Maestría en Desarrollo de software",
+      "institution": "Universidad Nacional",
+      "dates": "2027 - 2029",
+      "description": "Colaboré en la migración de componentes a Astro, optimización de rendimiento y maquetación responsive."
+    },
+    {
+      "degree": "Grado en Ingeniería de software",
+      "institution": "Universidad Politécnica de Madrid",
+      "dates": "2025 - presente",
+      "description": "Cursando 3er semestre. Asignaturas: Desarrollo Web, Bases de Datos, Interacción Persona-Ordenador."
+    },
+    {
+      "degree": "Bachillerato Tecnológico",
+      "institution": "IES Ramiro de Maeztu",
+      "dates": "2020 - 2022",
+      "description": "Especialización en ciencias y tecnología."
+    }
+  ],
+  "experience": [
+    {
+      "role": "Desarrolladora Frontend (prácticas)",
+      "company": "Startup TechFlow",
+      "dates": "Junio 2024 - Septiembre 2024",
+      "description": "Colaboré en la migración de componentes a Astro, optimización de rendimiento y maquetación responsive.",
+      "technologies": ["Astro", "Tailwind", "JavaScript"]
+    },
+    {
+      "role": "Voluntaria en Hackathon for Good",
+      "company": "Asociación Code4Change",
+      "dates": "Marzo 2024",
+      "description": "Desarrollé una landing page para una ONG usando HTML, CSS y vanilla JS en un equipo de 4 personas.",
+      "technologies": ["HTML", "CSS", "JavaScript"]
+    }
+  ],
+  "skills": {
+    "frontend": ["HTML", "CSS", "JavaScript", "Astro", "React (básico)"],
+    "backend": ["Node.js (básico)", "Python", "SQL"],
+    "tools": ["Git", "VS Code", "Trello"],
+    "languages": ["Español (nativo)", "Inglés (B1)"]
+  },
+  "projects": [
+    {
+      "name": "Mi primer blog con Astro",
+      "description": "Blog personal creado como ejercicio, con componentes y Markdown.",
+      "link": "https://github.com/analopez/mi-blog-astro"
+    },
+    {
+      "name": "Aplicación de tareas con Vue",
+      "description": "Pequeña app de lista de tareas para practicar Vue 3 y Composition API.",
+      "link": "https://github.com/analopez/vue-tasks"
+    }
+  ]
+}
